@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AdvancedSearch</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            .alert{
+                height: 60px;
+                margin: 0px;
+                border-color:darkgray;
+            }
+            .alert div{
+                position: relative;
+                left: 30px;
+                color:crimson;
+            }
+            .tab{
+                padding: 305px; /*or desired space*/
+            }
+            .pages{
+                text-align: right;
+                padding: 14px;
+                margin: 10px;
+            }
+            .pages > #AS {
+                padding: 10px;
+            }
+            form{
+                margin: 30px;
+            }
+            form input{
+                width: 500px;
+            }
+            #topform{
+                margin: 20px;
+            }
+            #todo{
+                color: darkgray;
+            }
+            form #button{
+                position: relative;
+                left: 566px;
+                width: 150px;
+                font-size: small;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="alert alert-secondary" role="alert">
+            <img src="google-logo-728x446-Copy.png" alt="Google image" width=85px>        
+        </div>
+        <div class="alert alert-light" role="alert">
+            <div><h5>Advanced Search<h5></div>
+        </div>
+        <!-- <span> is an inline container used to mark up a part of a text, or a part of a document-->
+        <div class="pages">
+            <a id="S" href="GoogleSearch.html">Search</a>
+            <a id="AS" href="GoogleImageSearch.html">Image Search</a>
+        </div>
+
+        <form class="find-pages-with" action="https://www.google.com/search" name="q">
+            <p id="topform">Find pages with... <span class="tab"></span> <span id="todo"><b>To do this in the search box.</b></span></p>
+            <p>all these words: <span class="11" style="padding: 50px;"></span> <input type="text" name="as_q"> <span class="12" style="padding: 10px;"></span><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;">Type the important words:</span> <span style="font-family:'Times New Roman', Times, serif"> tri-colour rat terrier</span> </p>
+            <p>this exact word or phrase: <span class="21" style="padding: 14px;"> </span><input type="text" name="as_epq"><span class="22" style="padding: 10px;"></span> <span style="font-family: Arial, Helvetica, sans-serif; font-size: small;">Put exact words in quotes:</span> <span style="font-family: 'Times New Roman', Times, serif"> "rat terrier"</span></p>
+            <p>any of these words: <span class="31" style="padding: 36px;"></span> <input type="text" name="as_oq"> <span class="32" style="padding: 10px;"></span><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;">Type OR between all the words you want:</span> <span style="font-family:'Times New Roman', Times, serif"> miniature OR standard</span><p>
+            <p>none of these words: <span class="41" style="padding: 31px;"></span> <input type="text" name="as_eq"> <span class="42" style="padding: 10px;"></span><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;">Put a minus sign just before words that you don't want:</span> <span style="font-family:'Times New Roman', Times, serif"> -rodent, -"Jack Russell"</span></p>
+            <input id="button" type="submit" class="btn btn-primary" value="Advanced Search">
+        </form>
+        
+    </body>
+</html>

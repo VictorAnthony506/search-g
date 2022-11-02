@@ -1,0 +1,58 @@
+.pages{
+    text-align: right;
+    padding: 14px;
+    margin: 10px;
+}
+
+.pages > #AS {
+    padding: 10px;
+}
+
+.body{
+    position: absolute;
+    top: 20%;
+    left: 39%;
+}
+
+.body > form{
+    position: absolute;
+    left:30px;
+}
+
+#google_image{
+    margin:8px;
+}
+
+.search_box input{
+    font-size: 14px;
+    height: 30px;
+    width: 600px;
+    position: relative;
+    right: 180px;
+    border-radius: 25px;
+    margin: 14px;
+}
+
+.search_box input:focus{
+    outline: none;
+}
+/* The :focus {outline:none} is to focus the search box so as not to show 
+rectangular shadow */
+
+#google_search_button{
+    position: relative;
+    left:10px;
+    height: 25px;
+}
+
+#below_img_box{
+    position: relative;
+    left: 90px;
+}
+
+.below_search_box #lucky_button{
+    position: relative;
+    left: 20px;
+    height: 25px;
+}
+

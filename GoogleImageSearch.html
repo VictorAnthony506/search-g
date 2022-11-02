@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ImageSearch</title>
+        <link href="GoogleSearch.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="pages">
+            <a id="S" href="GoogleSearch.html">Search</a>
+            <a id="AS" href="GoogleAdvancedSearch.html">Advanced Search</a>
+        </div>
+        <div class="body">
+            <div id="google_image">
+                <img src="google-images.png" alt="google-images" width=300px>
+                </div>
+
+                <form action="https://www.google.com/search">
+                    <div class="search_box">
+                        <input type="text" placeholder="Search images" name="q">
+                        <input type="hidden" name="tbm" value="isch">
+                    </div>
+                    <div id="below_img_box">
+                        <input type="submit" value="Image Search">
+                    </div>
+                </form>
+                <!-- Google image search link is of the following format 
+                    https://www.google.com/search?q={query}&tbm=isch
+                Parameter q requires user input while tbm doesn't.
+                'GET_parameter_name=value' for every input tag b4 submit 
+            button is appended by "&"-->
+        
+                
+        </div>
+
+    </body>
+</html>
